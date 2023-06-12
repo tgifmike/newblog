@@ -3,15 +3,20 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  // ... you will write your Prisma Client queries here
-  const user = await prisma.user.create({
-    data: {
-      firstName: "Mike",
-      lastName: "Sorrentino",
-      email: "mike@gmail.com",
+  const post = await prisma.post.upsert({
+    where: { id: 1 },
+    update: {},
+    create: {
+      title: "This is my test title",
+      slug: "This-is-my-test-slug",
+      authorId: 1,
+      preview:
+        "this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw. ",
+      content:
+        "this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw.this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw.this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw. this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw.this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw.this is my test previw. this is my test previw. this is my test previw.this is my test previviethis is my test previw.this is my test previw.this is my test previw.this is my test previw.",
     },
   });
-  console.log(user);
+  console.log(post);
 }
 
 main()
