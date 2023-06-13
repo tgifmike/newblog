@@ -20,8 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Header />
-      <body className="max-w-5xl mx-auto py-1">{children}</body>
+      <body className="max-w-5xl mx-auto py-1">
+        <Header />
+        <main className="py-1">
+          <div>{children}</div>
+        </main>
+      </body>
     </html>
   );
 }

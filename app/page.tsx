@@ -10,9 +10,9 @@ export default async function HomePage() {
 
   return (
     <main>
-      <div className="text-5xl font-extrabold text-grey-800">
+      <h1 className="text-5xl font-extrabold text-grey-800">
         Welcome to my Blogs
-      </div>
+      </h1>
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8 border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition">
         <h3 className="mt-2 text-lg font-extrabold text-red-400">
           {posts?.title}
