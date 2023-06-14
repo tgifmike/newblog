@@ -5,9 +5,9 @@ export const metadata = {
 
 const aboutPage = () => {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
+    <div className="p-2 m-2">
+      <h1 className="text-xl text-rose-800 p-5">About Page</h1>
+      <p className="text-lg text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
         aliquam, illum expedita perferendis reprehenderit nostrum! Maxime non
         voluptatum unde maiores, ipsam alias amet sit porro odio accusantium
