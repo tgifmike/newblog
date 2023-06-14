@@ -9,7 +9,7 @@ const nextConfig = {
   // distDir: 'dist',
 };
 
-module.exports = nextConfig;
+//module.exports = nextConfig;
 
 // next.config.js
 
@@ -29,4 +29,5 @@ if (isGithubActions) {
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
+  nextConfig,
 };
