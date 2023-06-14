@@ -22,8 +22,8 @@ if (isGithubActions) {
   // trim off `<owner>/`
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
 
-  assetPrefix = `/${"https://tgifmike.github.io/newblog/"}/`;
-  basePath = `/${"https://tgifmike.github.io/newblog/"}`;
+  assetPrefix = `/${"tgifmike.github.io/newblog"}/`;
+  basePath = `/${"tgifmike.github.io/newblog"}`;
 }
 
 module.exports = {
