@@ -1,4 +1,4 @@
-export type Blog = {
+export type Posts = {
   id: string;
   createdAt: Date;
   title: string;

@@ -8,6 +8,7 @@ export default async function HomePage() {
     },
   });
 
+  console.log(posts);
   return (
     <main>
       <h1 className="text-5xl font-extrabold text-grey-800">
