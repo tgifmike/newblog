@@ -10,6 +10,10 @@ export async function getPost(slug: string) {
 }
 
 export async function getPosts() {
-  const posts = await prisma.post.findMany();
+  const posts = await prisma.post.findMany({
+    orderBy: {
+      created_at: "desc",
+    },
+  });
   return posts;
 }
