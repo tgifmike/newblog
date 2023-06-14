@@ -9,25 +9,25 @@ const nextConfig = {
   // distDir: 'dist',
 };
 
-//module.exports = nextConfig;
+module.exports = nextConfig;
 
 // next.config.js
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
+// const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
-let assetPrefix = "";
-let basePath = "/";
+// let assetPrefix = "";
+// let basePath = "/";
 
-if (isGithubActions) {
-  // trim off `<owner>/`
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
+// if (isGithubActions) {
+//   // trim off `<owner>/`
+//   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
 
-  assetPrefix = `/${"tgifmike.github.io/newblog"}/`;
-  basePath = `/${"tgifmike.github.io/newblog"}`;
-}
+//   assetPrefix = `/${"tgifmike.github.io/newblog"}/`;
+//   basePath = `/${"tgifmike.github.io/newblog"}`;
+// }
 
-module.exports = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-  nextConfig,
-};
+// module.exports = {
+//   assetPrefix: assetPrefix,
+//   basePath: basePath,
+//   nextConfig,
+// };
