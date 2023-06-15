@@ -1,6 +1,8 @@
 /**
  * @type {import('next').NextConfig}
  */
+
+const debug = process.env.NODE_ENV !== "production";
 const nextConfig = {
   output: "export",
   // Optional: Add a trailing slash to all paths `/about` -> `/about/`
@@ -10,6 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: !debug ? "https://tgifmike.github.io/newblog/" : "",
 };
 
 module.exports = nextConfig;
