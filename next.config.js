@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  "process.env.BACKEND_URL": prod ? "/Next-React-Components" : "",
+  "process.env.BACKEND_URL": prod ? "/newblog" : "",
 };
 
 module.exports = nextConfig;
