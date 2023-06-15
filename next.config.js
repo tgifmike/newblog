@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 
-const debug = process.env.NODE_ENV !== "production";
+const prod = process.env.NODE_ENV === "production";
 const nextConfig = {
   output: "export",
   // Optional: Add a trailing slash to all paths `/about` -> `/about/`
@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: !debug ? "https://tgifmike.github.io/newblog/" : "",
+  "process.env.BACKEND_URL": prod ? "/Next-React-Components" : "",
 };
 
 module.exports = nextConfig;
