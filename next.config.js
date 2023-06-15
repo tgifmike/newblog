@@ -7,6 +7,9 @@ const nextConfig = {
   trailingSlash: false,
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;

@@ -7,7 +7,7 @@ export default async function HomePage() {
   return (
     <main>
       <h1 className="text-5xl font-extrabold text-grey-800">
-        Welcome to my Blogs
+        Welcome to the Manager Life
       </h1>
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sixPosts.map((sixPosts) => (
