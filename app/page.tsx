@@ -1,6 +1,7 @@
 import { getFirstSixPosts } from "@/lib/db_utilitites";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default async function HomePage() {
   const sixPosts = await getFirstSixPosts();
@@ -19,6 +20,13 @@ export default async function HomePage() {
             <h3 className="mt-2 text-lg font-extrabold text-red-400">
               {sixPosts?.title}
             </h3>
+            <Image
+              src={sixPosts.image}
+              alt={sixPosts.title}
+              width={750}
+              height={400}
+              //className="object-cover rounded-lg border-2 border-gray-500"
+            />
             <p className="text-md text-gray-700 mt-5">{sixPosts?.preview}</p>
           </Link>
         ))}
