@@ -17,3 +17,13 @@ export async function getPosts() {
   });
   return posts;
 }
+
+export async function getFirstSixPosts() {
+  const sixPosts = await prisma.post.findMany({
+    orderBy: {
+      created_at: "desc",
+    },
+    take: 6,
+  });
+  return sixPosts;
+}
