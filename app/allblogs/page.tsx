@@ -1,6 +1,7 @@
 import { getPosts } from "@/lib/db_utilitites";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default async function AllblogPage() {
   const posts = await getPosts();
@@ -17,6 +18,13 @@ export default async function AllblogPage() {
             <h3 className="mt-2 text-lg font-extrabold text-red-400">
               {post.title}
             </h3>
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={520}
+              height={380}
+              className="object-cover rounded-lg border-2 border-gray-500"
+            />
             <p className="text-md">{post.preview}</p>
           </Link>
         ))}

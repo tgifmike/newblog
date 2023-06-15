@@ -18,14 +18,14 @@ export default async function HomePage() {
             className="border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition"
           >
             <h3 className="mt-2 text-lg font-extrabold text-red-400">
-              {sixPosts?.title}
+              {sixPosts.title}
             </h3>
             <Image
               src={sixPosts.image}
               alt={sixPosts.title}
               width={750}
               height={400}
-              //className="object-cover rounded-lg border-2 border-gray-500"
+              className="object-cover rounded-lg border-2 border-gray-500"
             />
             <p className="text-md text-gray-700 mt-5">{sixPosts?.preview}</p>
           </Link>

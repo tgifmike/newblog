@@ -1,4 +1,5 @@
 import { getPost } from "@/lib/db_utilitites";
+import Image from "next/image";
 
 export default async function Blog({ params }: { params: { blog: string } }) {
   const slug = params.blog;
@@ -12,7 +13,13 @@ export default async function Blog({ params }: { params: { blog: string } }) {
         </h1>
       </header>
       {/* image here */}
-
+      <Image
+        src={post?.image}
+        alt={post?.title}
+        width={750}
+        height={400}
+        className="mt-10 border-2 border-grey-700 object-cover rounded-xl"
+      />
       {/* content here */}
       <div className="text-lg text-gray-700 mt-5 font-serif text-justify leading-loose">
         {post?.content}
