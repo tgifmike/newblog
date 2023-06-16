@@ -9,5 +9,3 @@ show blog posts
 auth with crds
 auth with social ie apple/google
 contact form with email
-
-test new branch
