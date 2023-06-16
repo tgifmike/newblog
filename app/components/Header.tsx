@@ -8,7 +8,7 @@ const Header = () => {
       <header className="flex items-center justify-between">
         <Link href="/newblog/">
           <Image
-            src="/TML_logo.png"
+            src="newblog/TML_logo.png"
             width={250}
             height={200}
             alt="The Manager Life Logo"
