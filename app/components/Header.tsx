@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="max-w-5xl mx-auto py-1">
       <header className="flex items-center justify-between">
-        <Link href="/">
+        <Link href="/newblog/">
           <Image
             src="/TML_logo.png"
             width={250}
