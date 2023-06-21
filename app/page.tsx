@@ -13,7 +13,7 @@ export default async function HomePage() {
       <div className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sixPosts.map((sixPosts) => (
           <Link
-            href={`/blogs/${sixPosts.slug}`}
+            href={`./blogs/${sixPosts.slug}`}
             key={sixPosts.id}
             className="border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition"
           >
@@ -21,7 +21,7 @@ export default async function HomePage() {
               {sixPosts.title}
             </h3>
             <Image
-              src={`/${sixPosts.image}`}
+              src={`./${sixPosts.image}`}
               alt={sixPosts.title}
               width={750}
               height={400}
