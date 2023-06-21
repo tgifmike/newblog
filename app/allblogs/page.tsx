@@ -19,7 +19,7 @@ export default async function AllblogPage() {
               {post.title}
             </h3>
             <Image
-              src={`/${post.image}`}
+              src={`./${post.image}`}
               alt={post.title}
               width={520}
               height={380}
