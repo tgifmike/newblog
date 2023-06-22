@@ -11,7 +11,7 @@ export default async function AllblogPage() {
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <Link
-            href={`/blogs/${post.slug}`}
+            href={`./blogs/${post.slug}`}
             key={post.id}
             className="border-2 border-slate-900 rounded-lg p-1 m-1 hover:scale-105 hover:border-blue-500 transition"
           >
@@ -19,7 +19,7 @@ export default async function AllblogPage() {
               {post.title}
             </h3>
             <Image
-              src={`/${post.image}`}
+              src={`./${post.image}`}
               alt={post.title}
               width={520}
               height={380}
