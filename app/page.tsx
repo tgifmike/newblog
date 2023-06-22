@@ -22,7 +22,7 @@ export default async function HomePage() {
               {sixPosts.title}
             </h3>
             <Image
-              src={`./${sixPosts.image}`}
+              src={sixPosts.image}
               alt={sixPosts.title}
               width={750}
               height={400}
