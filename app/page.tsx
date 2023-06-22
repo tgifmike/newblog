@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default async function HomePage() {
   const sixPosts = await getFirstSixPosts();
+
   return (
     <main>
       <h1 className="text-5xl font-extrabold text-grey-800">
@@ -13,7 +14,7 @@ export default async function HomePage() {
       <div className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sixPosts.map((sixPosts) => (
           <Link
-            href={`/blogs/${sixPosts.slug}`}
+            href={`./blogs/${sixPosts.slug}`}
             key={sixPosts.id}
             className="border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition"
           >
