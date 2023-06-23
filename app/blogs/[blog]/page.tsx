@@ -15,7 +15,7 @@ export default async function Blog({ params }: { params: { blog: string } }) {
       {/* image here */}
 
       <Image
-        src={`./${post?.image}`}
+        src={post?.image}
         alt={`${post?.title}`}
         width={750}
         height={400}

@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: mike
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: newblog
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
