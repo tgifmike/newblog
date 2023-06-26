@@ -4,9 +4,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: tgifmike
-      POSTGRES_PASSWORD: bipke4-xexzAs-caxqed
-      POSTGRES_DB: newblog
+      POSTGRES_USER: defalut
+      POSTGRES_PASSWORD: rLBhM4iA5ekC
+      POSTGRES_DB: verceldb
     volumes:
       - db-data:/var/lib/postgresql/data
 
