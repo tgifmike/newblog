@@ -18,13 +18,15 @@ export default async function AllblogPage() {
             <h3 className="mt-2 text-lg font-extrabold text-red-400">
               {post.title}
             </h3>
-            {/* <Image
-              src={post?.image}
-              alt={post.title}
-              width={520}
-              height={380}
-              className="object-cover rounded-lg border-2 border-gray-500"
-            /> */}
+            {post.image && (
+              <Image
+                src={post.image}
+                alt={post.title}
+                width={520}
+                height={380}
+                className="object-cover rounded-lg border-2 border-gray-500"
+              />
+            )}
             <p className="text-md">{post.preview}</p>
           </Link>
         ))}
