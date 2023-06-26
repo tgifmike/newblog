@@ -17,10 +17,10 @@ const Header = () => {
         </Link>
 
         <div className="flex items-center gap-5 text-xl text-slate-800">
-          <Link className="hover:scale-105 transition" href="/about">
+          <Link className="hover:scale-110 transition" href="/about">
             About
           </Link>
-          <Link className="hover:scale-115 transition" href="/allblogs">
+          <Link className="hover:scale-110 transition" href="/allblogs">
             All Blogs
           </Link>
         </div>
