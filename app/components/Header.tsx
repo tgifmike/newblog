@@ -16,7 +16,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="flex items-center gap-5 text-lg text-gray-600">
+        <div className="flex items-center gap-5 text-xl text-slate-800 hover:scale-105 transition">
           <Link href="/about">About</Link>
           <Link href="/allblogs">All Blogs</Link>
         </div>
