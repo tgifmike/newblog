@@ -8,12 +8,12 @@ export default async function AllblogPage() {
   return (
     <main>
       <h1 className="text-5xl font-extrabold text-grey-800">All Blog Posts</h1>
-      <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <Link
             href={`./blogs/${post.slug}`}
             key={post.id}
-            className="border-2 border-slate-900 rounded-lg p-1 m-1 hover:scale-105 hover:border-blue-500 transition"
+            className="border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition"
           >
             <h3 className="mt-2 text-lg font-extrabold text-red-400">
               {post.title}
@@ -27,7 +27,7 @@ export default async function AllblogPage() {
                 className="object-cover rounded-lg border-2 border-gray-500"
               />
             )}
-            <p className="text-md">{post.preview}</p>
+            <p className="text-md text-gray-700 mt-5">{post.preview}</p>
           </Link>
         ))}
       </div>
