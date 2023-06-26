@@ -20,7 +20,7 @@ const Header = () => {
           <Link className="hover:scale-105 transition" href="/about">
             About
           </Link>
-          <Link className="hover:scale-105 transition" href="/allblogs">
+          <Link className="hover:scale-115 transition" href="/allblogs">
             All Blogs
           </Link>
         </div>

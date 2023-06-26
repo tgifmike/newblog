@@ -27,7 +27,9 @@ export default async function AllblogPage() {
                 className="object-cover rounded-lg border-2 border-gray-500"
               />
             )}
-            <p className="text-md text-gray-700 mt-5">{post.preview}</p>
+            <p className="text-md text-gray-700 text-justify mt-5">
+              {post.preview}
+            </p>
           </Link>
         ))}
       </div>
