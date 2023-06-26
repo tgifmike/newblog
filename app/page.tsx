@@ -13,11 +13,7 @@ export default async function HomePage() {
       </h1>
       <div className="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sixPosts.map((sixPosts) => (
-          <Link
-            href={`./blogs/${sixPosts.slug}`}
-            key={sixPosts.id}
-            className="border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition"
-          >
+          <div className="border-2 border-grey-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition">
             <h3 className="mt-2 text-lg font-extrabold text-red-400">
               {sixPosts.title}
             </h3>
@@ -32,8 +28,15 @@ export default async function HomePage() {
             )}
             <p className="text-md text-gray-700 text-justify mt-5">
               {sixPosts?.preview}
+              <Link
+                href={`./blogs/${sixPosts.slug}`}
+                key={sixPosts.id}
+                className="text-red-700 p-1 hover:scale-105 transition"
+              >
+                Read More...
+              </Link>
             </p>
-          </Link>
+          </div>
         ))}
       </div>
     </main>
